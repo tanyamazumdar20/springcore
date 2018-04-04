@@ -1,16 +1,16 @@
-package ua.epam.spring.hometask.service;
+package ua.epam.spring.hometask.dao;
 
-import ua.epam.spring.hometask.domain.Event;
-import ua.epam.spring.hometask.domain.User;
+import ua.epam.spring.hometask.model.Event;
+import ua.epam.spring.hometask.model.User;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static ua.epam.spring.hometask.domain.EventRating.HIGH;
-import static ua.epam.spring.hometask.domain.EventRating.LOW;
-import static ua.epam.spring.hometask.domain.EventRating.MID;
+import static ua.epam.spring.hometask.model.EventRating.HIGH;
+import static ua.epam.spring.hometask.model.EventRating.LOW;
+import static ua.epam.spring.hometask.model.EventRating.MID;
 
-public class SimpleDAO {
+public class EventDAO {
   private Map<String, Event> constructEventMap(){
     Event event1 = new Event();
     event1.setBasePrice(11);

@@ -1,4 +1,4 @@
-package ua.epam.spring.hometask.domain;
+package ua.epam.spring.hometask.model;
 
 /**
  * @author Yuriy_Tkach

@@ -5,8 +5,8 @@ import java.time.LocalDateTime;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import ua.epam.spring.hometask.domain.Event;
-import ua.epam.spring.hometask.domain.User;
+import ua.epam.spring.hometask.model.Event;
+import ua.epam.spring.hometask.model.User;
 
 /**
  * @author Yuriy_Tkach

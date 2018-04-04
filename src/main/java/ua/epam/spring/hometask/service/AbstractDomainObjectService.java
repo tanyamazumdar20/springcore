@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import javax.annotation.Nonnull;
 
-import ua.epam.spring.hometask.domain.DomainObject;
+import ua.epam.spring.hometask.model.DomainObject;
 
 /**
  * @author Yuriy_Tkach

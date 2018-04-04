@@ -3,7 +3,7 @@ package ua.epam.spring.hometask.service;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import ua.epam.spring.hometask.domain.User;
+import ua.epam.spring.hometask.model.User;
 
 /**
  * @author Yuriy_Tkach

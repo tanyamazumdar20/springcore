@@ -1,6 +1,6 @@
 package ua.epam.spring.hometask.service;
 
-import ua.epam.spring.hometask.domain.Event;
+import ua.epam.spring.hometask.model.Event;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

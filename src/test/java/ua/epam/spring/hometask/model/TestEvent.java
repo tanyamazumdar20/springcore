@@ -1,4 +1,4 @@
-package ua.epam.spring.hometask.domain;
+package ua.epam.spring.hometask.model;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

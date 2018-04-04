@@ -10,12 +10,12 @@
         </property>
     </bean>
 
-    <bean id = "auditorium" class="ua.epam.spring.hometask.domain.Auditorium" scope="prototype">
+    <!--<bean id = "auditorium" class="ua.epam.spring.hometask.model.Auditorium" scope="prototype">
         <property name="name" value="${auditorium.name}" />
         <property name="numberOfSeats" value="${auditorium.numberOfSeats}" />
         <property name="vipSeats" value="${auditorium.vipSeats}" />
     </bean>
-
+-->
     <bean id="auditoriumService" class="ua.epam.spring.hometask.service.AuditoriumServiceImpl">
     </bean>
 

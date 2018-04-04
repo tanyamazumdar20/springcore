@@ -5,7 +5,7 @@ import java.util.Set;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import ua.epam.spring.hometask.domain.Auditorium;
+import ua.epam.spring.hometask.model.Auditorium;
 
 /**
  * @author Yuriy_Tkach

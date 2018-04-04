@@ -1,4 +1,4 @@
-package ua.epam.spring.hometask.domain;
+package ua.epam.spring.hometask.model;
 
 import java.time.LocalDateTime;
 import java.util.Objects;

@@ -1,12 +1,10 @@
 package ua.epam.spring.hometask.service;
 
-import ua.epam.spring.hometask.domain.User;
+import ua.epam.spring.hometask.model.User;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
 
 public class UserServiceImpl implements UserService {
 

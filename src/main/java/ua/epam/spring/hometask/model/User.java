@@ -1,4 +1,4 @@
-package ua.epam.spring.hometask.domain;
+package ua.epam.spring.hometask.model;
 
 import java.util.NavigableSet;
 import java.util.Objects;
