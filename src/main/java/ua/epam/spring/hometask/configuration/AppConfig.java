@@ -11,11 +11,11 @@ import ua.epam.spring.hometask.model.Auditorium;
 
 @Configuration
 public class AppConfig {
-    @Value("${auditorium.name}")
+    @Value("${auditorium1.name}")
     String auditoriumName;
-    @Value("${auditorium.numberOfSeats}")
+    @Value("${auditorium1.numberOfSeats}")
     String numberOfSeats;
-//    @Value ("${auditorium.vipSeats}")
+    //@Value ("${auditorium1.vipSeats}")
     //TODO: List<Integer> vipSeats;
 
 
