@@ -89,5 +89,9 @@ public class User extends DomainObject {
         }
         return true;
     }
-
+  @Override
+  public String toString() {
+    String msg = getFirstName() + "," +getLastName()+ "," + getEmail();
+    return msg;
+  }
 }

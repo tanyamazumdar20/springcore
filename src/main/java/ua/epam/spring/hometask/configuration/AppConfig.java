@@ -12,9 +12,9 @@ import ua.epam.spring.hometask.model.Auditorium;
 @Configuration
 public class AppConfig {
     @Value("${auditorium1.name}")
-    String auditoriumName;
+    static String auditoriumName;
     @Value("${auditorium1.numberOfSeats}")
-    String numberOfSeats;
+    static String numberOfSeats;
     //@Value ("${auditorium1.vipSeats}")
     //TODO: List<Integer> vipSeats;
 
@@ -34,9 +34,8 @@ public class AppConfig {
     }
 
 
-    public static void main(String[] args) {
-        ApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
-        String text = (String) appContext.getBean("greeting");
-        System.out.println("Hello " + text);
-    }
+//    public static void main(String[] args) {
+//        ApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
+//        System.out.println(auditoriumName + "," +numberOfSeats);
+//    }
 }
