@@ -15,6 +15,8 @@ public class User extends DomainObject {
 
     private String email;
 
+    public User(){}
+
     //todo to be verified
     public User(String email, String firstName, String lastName, Long userId){
       setEmail(email);
