@@ -31,7 +31,7 @@ public class UserDAO {
     getUserMap
         .entrySet()
         .stream()
-        .filter(e -> e.getValue().getEmail().equals( "nameen@email.com"))
+        .filter(e -> e.getValue().getId().equals( 3l))
         .forEach(e ->
             System.out.println(e.getKey()+" : "+e.getValue()));
 
