@@ -1,35 +1,37 @@
 package ua.epam.spring.hometask.dao;
 
+import org.springframework.context.annotation.Bean;
 import ua.epam.spring.hometask.model.User;
 
 import java.util.HashMap;
 
 public class UserDAO {
 
-  User user = new User();
   HashMap<Long, User> userMap = new HashMap();
 
-  public void setUserInfo(String email, String firstName, String lastName, Long userId) {
-    user.setEmail(email);
-    user.setFirstName(firstName);
-    user.setLastName(lastName);
-    //todo user.setTickets();
-    user.setId(userId);
-    setUserMap(userId);
-  }
+//  public void setUserInfo(String email, String firstName, String lastName, Long userId) {
+//    user.setEmail(email);
+//    user.setFirstName(firstName);
+//    user.setLastName(lastName);
+//    //todo user.setTickets();
+//    user.setId(userId);
+//    setUserMap(userId);
+//  }
 
-  public HashMap<Long, User> setUserMap(Long userId) {
-    userMap.put(userId, user);
+  @Bean
+  public HashMap<Long, User> setUserMap() {
+    userMap.put(1l, new User("tanya@email.com", "tanya", "mazum", 1l));
+    userMap.put(2l, new User("nameen@email.com", "nameen", "seher", 2l));
+    userMap.put(3l, new User("aeena@email.com", "aeena", "rabin", 3l));
     return userMap;
   }
 
   public void searchUser(){
-    User user = new User();
-    HashMap<Long, User> getUserMap = setUserMap(1l);
+    HashMap<Long, User> getUserMap = setUserMap();
     getUserMap
         .entrySet()
         .stream()
-        .filter(e -> e.getValue().getFirstName().equals( "tanya"))
+        .filter(e -> e.getValue().getEmail().equals( "nameen@email.com"))
         .forEach(e ->
             System.out.println(e.getKey()+" : "+e.getValue()));
 
@@ -38,14 +40,14 @@ public class UserDAO {
 
   public static void main(String[] args) {
     UserDAO x = new UserDAO();
-    x.setUserInfo("tanya@email.com", "tanya", "mazum", 1l);
-    x.setUserInfo("nameen@email.com", "nameen", "seher", 2l);
-    x.setUserInfo("aeena@email.com", "aeena", "rabin", 3l);
-    x.setUserMap(1l);
-//    HashMap<Long, User> getMap = x.setUserMap(1l);
-//    getMap.entrySet().forEach(entry -> {
-//      System.out.println(entry.getKey()+":"+entry.getValue());
-//    });
+//    x.setUserInfo("tanya@email.com", "tanya", "mazum", 1l);
+//    x.setUserInfo("nameen@email.com", "nameen", "seher", 2l);
+//    x.setUserInfo("aeena@email.com", "aeena", "rabin", 3l);
+    x.setUserMap();
+    HashMap<Long, User> getMap = x.setUserMap();
+    getMap.entrySet().forEach(entry -> {
+      //System.out.println(entry.getKey()+":"+entry.getValue());
+    });
 
     x.searchUser();
   }

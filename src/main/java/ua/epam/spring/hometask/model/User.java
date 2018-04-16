@@ -15,6 +15,15 @@ public class User extends DomainObject {
 
     private String email;
 
+    //todo to be verified
+    public User(String email, String firstName, String lastName, Long userId){
+      setEmail(email);
+      setFirstName(firstName);
+      setLastName(lastName);
+      setId(userId);
+      //todo setTickets();
+    }
+
     private NavigableSet<Ticket> tickets = new TreeSet<>();
 
     public String getFirstName() {
