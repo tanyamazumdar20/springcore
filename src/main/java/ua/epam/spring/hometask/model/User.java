@@ -19,9 +19,12 @@ public class User extends DomainObject {
 
     //todo to be verified
     public User(String email, String firstName, String lastName, Long userId){
-      setEmail(email);
-      setFirstName(firstName);
-      setLastName(lastName);
+      this.email = email;
+      this.firstName = firstName;
+      this.lastName = lastName;
+//      setEmail(email);
+//      setFirstName(firstName);
+//      setLastName(lastName);
       setId(userId);
       //todo setTickets();
     }
