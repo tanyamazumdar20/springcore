@@ -39,10 +39,4 @@ public interface EventService extends AbstractDomainObjectService<Event> {
      * @return Set of events
      */
     // public @Nonnull Set<Event> getNextEvents(@Nonnull LocalDateTime to);
-
-//  save, remove, getById, getByName, getAll
-//  getForDateRange(from, to) - returns events for specified date range (OPTIONAL)
-//  getNextEvents(to) - returns events from now till the ‘to’ date (OPTIONAL)
-
-
 }

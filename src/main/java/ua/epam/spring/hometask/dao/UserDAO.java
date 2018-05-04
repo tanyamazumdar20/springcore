@@ -5,7 +5,6 @@ import ua.epam.spring.hometask.model.User;
 import java.util.HashMap;
 
 public class UserDAO {
-
     public HashMap<Long, User> setUserMap() {
     HashMap<Long, User> userMap = new HashMap();
     userMap.put(1l, new User("tanya@email.com", "Tanya", "Mazum", 1l));
