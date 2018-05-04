@@ -52,10 +52,13 @@ public class UserServiceImpl implements UserService {
   @Nonnull
   @Override
   public Collection<User> getAll() {
+    getUserMap.entrySet().forEach(entry -> {
+      System.out.println(entry.getKey()+":"+entry.getValue());
+    });
     return null;
   }
 
-  public static void main(String[] args) {
+  /*public static void main(String[] args) {
     UserServiceImpl x = new UserServiceImpl();
     System.out.println("saved user");
     x.save(new User("mahi@email.com", "Mahi", "Yasan", 4l));
@@ -63,9 +66,9 @@ public class UserServiceImpl implements UserService {
     x.save(new User("meena@email.com", "Meena", "Soni", 6l));
     x.save(new User("kohinoor@email.com", "Noor", "Sinha", 7l));
     System.out.println("_____________all users from map__________________________________");
-    x.getUserMap.entrySet().forEach(entry -> {
-      System.out.println(entry.getKey()+":"+entry.getValue());
-    });
+//    x.getUserMap.entrySet().forEach(entry -> {
+//      System.out.println(entry.getKey()+":"+entry.getValue());
+//    });
     System.out.println("user by email");
     x.getUserByEmail("meena@email.com");
     System.out.println("user by id");
@@ -73,8 +76,8 @@ public class UserServiceImpl implements UserService {
     System.out.println("user removed");
     x.remove(x.getUserMap.get(5l));
     System.out.println("_____________all users from map after removal_____________________");
-    x.getUserMap.entrySet().forEach(entry -> {
-      System.out.println(entry.getKey()+":"+entry.getValue());
-    });
-  }
+//    x.getUserMap.entrySet().forEach(entry -> {
+//      System.out.println(entry.getKey()+":"+entry.getValue());
+//    });
+  }*/
 }
